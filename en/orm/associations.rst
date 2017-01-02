@@ -309,6 +309,7 @@ The above would emit SQL that is similar to::
 
     SELECT * FROM addresses LEFT JOIN users ON addresses.user_id = users.id;
 
+.. _has-many-associations:
 
 HasMany Associations
 ====================
@@ -456,6 +457,8 @@ association property names. If for example you have counter fields that conflict
 with association properties, you must either rename the association property, or
 the column name.
 
+.. _blongs-to-many-associations:
+
 BelongsToMany Associations
 ==========================
 
@@ -583,7 +586,7 @@ Possible keys for belongsToMany association arrays include:
   Indicates the mode to be used for saving associated entities. The former will
   only create new links between both side of the relation and the latter will
   do a wipe and replace to create the links between the passed entities when
-  saving.
+  saving. .. _converting-request-data:
 - **finder**: The finder method to use when loading associated records.
 
 
